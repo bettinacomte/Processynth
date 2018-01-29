@@ -1,4 +1,4 @@
-//processynth random Sin
+//processynth random sound Sin
 import processing.sound.*;
 
 SinOsc sine;
@@ -6,8 +6,6 @@ SinOsc sine;
 float freq=400;
 float amp=0.5;
 float pos;
-float x = mouseX;
-float y = mouseY;
 
 void setup(){
  size (500, 500);
