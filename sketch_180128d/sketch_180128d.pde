@@ -17,15 +17,20 @@ void setup(){
     
     //Start the Sine Oscillator. 
     sine.play();
+    
+     background(0);
 }
 
 void draw(){
- background(random(255), random(255), random(255), random(255));
- ellipse(random(0, 500), random(0, 500), 20, 20);
+  int posX, posY;
+  posX = int(random(0, 500));
+  posY = int(random(0, 500));
+  
+ ellipse(posX, posY, 20, 20);
 
   
   // Map mouseX from 20Hz to 1000Hz for frequency  
-  freq=map(random(0, 500), 0, width, 80.0, 1000.0);
+  freq=map(posX, 0, width, 80.0, 1000.0);
   sine.freq(freq);
 
 }
