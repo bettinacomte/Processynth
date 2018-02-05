@@ -9,7 +9,7 @@ float pos;
 
 void setup(){
  size (500, 500);
- frameRate(5);
+ frameRate(10);
  
      // Create and start the sine oscillator.
 
